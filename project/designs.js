@@ -3,8 +3,8 @@
 
 
 // When size is submitted by the user, call makeGrid()
-$("#submit_button").submit(function(event){
-    $('#pixelCanvas tr').remove()
+$('#sizePicker').submit(function(event){
+    $('#pixelCanvas tr').remove();
     var height = $('#inputHeight').val();
     var width = $('#inputWeight').val();
     makeGrid(height,width);
@@ -14,20 +14,18 @@ $("#submit_button").submit(function(event){
 
 function makeGrid(rows, cols) {
     // Your code goes here!
-    for(var i = 0 ; i < rows ; i++){
+    for(var i = 0 ; i < rows ; i++) {
         $("#pixelCanvas").append("<tr></tr>");
-        for(var j = 0 ; j < cols ; j++){
+        for(var j = 0 ; j < cols ; j++) {
             $("tr:last").append("<th></th>");
             $("th").addClass( "box" );
         }
     }
-    console.log(event);
-    // event.preventDefault();
 
 }
 $(".box").on("click", function(){
     var colr = $("#colorPicker").val();
-    $(".box").css("background_color",colr);
+    $(".box").css("background-color",colr);
 });
 
 
