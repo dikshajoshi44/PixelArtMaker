@@ -14,11 +14,11 @@ $("#submit_button").submit(function(event){
 
 function makeGrid(rows, cols) {
     // Your code goes here!
-    for(var i = 1 ; i<= rows ; i++){
+    for(var i = 0 ; i < rows ; i++){
         $("#pixelCanvas").append("<tr></tr>");
-        for(var j = 1 ; j<= cols ; j++){
+        for(var j = 0 ; j < cols ; j++){
             $("tr:last").append("<th></th>");
-            $("tr").addClass( "box" );
+            $("th").addClass( "box" );
         }
     }
     console.log(event);
