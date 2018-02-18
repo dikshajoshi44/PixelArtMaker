@@ -18,7 +18,7 @@ h2:first-of-type {
 
 table,
 tr,
-td {
+th {
     border: 1px solid black;
 }
 
@@ -31,7 +31,7 @@ tr {
     height: 20px;
 }
 
-td {
+th {
     width: 20px;
 }
 
